@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emika Ijuin</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <div id="page-container">
+    <div id="content-container">
+
+      <div id="image">
+        <img src="headshot.jpeg" alt="my-face">
+      </div>
+
+      <div id="about">
+        <h1 id="name">Emika Ijuin</h1>
+        <div id="contact">
+          <div id="github">
+             <a href="https://www.github.com/emikaijuin" target="_blank">
+              <i class="fab fa-github"></i>
+             </a>
+           </div>
+           <div id="linkedin">
+             <a href="https://www.linkedin.com/in/emika-ijuin-p-e-a9753370/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+           </div>
+           <div id="email" onClick='copyEmail();'>
+             <a href="mailto:emikaijuin@gmail.com" id="email-address">
+               <i class="fas fa-envelope" alt="emikaijuin@gmail.com"></i>
+             </a>
+           </div>
+        </div>
+      </div>
+
+      <div id="info">
+        <ul>
+          <li class="info-bullet">
+            <h2><a href="./projects.html">View Projects</a></h2>
+          </li>
+          <li class="info-bullet">
+            Former Texas based civil engineer turned Malaysia based web developer. Stack includes Ruby/Ruby-on-Rails, Python, and Elixir.
+          </li>
+
+          <li class="info-bullet">
+            Currently junior software engineer and course mentor at NEXT Academy, Kuala Lumpur.
+          </li>
+
+          <li class="info-bullet">
+            Available for freelance
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script>
+    function copyEmail(){
+      var email = $('#email-address');
+      email.select();
+      document.execCommand("copy");
+    }
+  </script>
+
+</body>
+</html>
+
